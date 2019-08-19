@@ -18,6 +18,8 @@ export class Confirm extends Component {
         const {
             values: { firstName, lastName, email, occupation, city, bio }
           } = this.props;
+
+          //local storage
           var cadena="["+firstName+","+lastName+","+email+","+occupation+","+city+","+bio+"]";
         localStorage.setItem('Persona',cadena);
 
