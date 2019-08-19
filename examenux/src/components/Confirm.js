@@ -33,7 +33,19 @@ export class Confirm extends Component {
                         <ListItem primaryText="Ciudad" secondaryText={city}/>
                         <ListItem primaryText="Biografia" secondaryText={bio}/>
                     </List>
-                    
+                    <RaisedButton
+                        label="Confirmar y Continuar"
+                        primary={true}
+                        style={styles.button}
+                        onClick={this.continue}
+                        
+                    />
+                    <RaisedButton
+                        label="Regresar"
+                        primary={true}
+                        style={styles.button}
+                        onClick={this.back}
+                    />
                     
                     
                 </React.Fragment>
